@@ -1,0 +1,132 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  min-height: 100vh;
+  background: 
+    linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)),
+    url('../img/bg.jpg') center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+/* Container */
+.container {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-card {
+  background-color: #000000d0;
+  border-radius: 20px;
+  padding: 14px;
+  box-shadow: 0 0 35px rgba(255, 215, 0, 0.12);
+  transition: 0.3s ease;
+}
+
+.gold-frame {
+  border: 2px solid gold;
+  padding: 35px 30px;
+  border-radius: 16px;
+  text-align: center;
+  max-width: 340px;
+  width: 100%;
+  background-color: #0e0e0e;
+  position: relative;
+  box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.4);
+  }
+  to {
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.8);
+  }
+}
+
+ .logo {
+  width: 170px;
+  margin-bottom: 10px;
+  filter: drop-shadow(0 0 8px rgba(255, 215, 0, 0.4));
+}
+
+
+.subtitle {
+  color: gold;
+  font-size: 13px;
+  letter-spacing: 2px;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+/* Form */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 10px;
+}
+
+label {
+  color: gold;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: left;
+}
+
+input {
+  padding: 12px 14px;
+  border: 1.5px solid gold;
+  border-radius: 10px;
+  background-color: #1a1a1a;
+  color: #fff;
+  font-size: 14px;
+  transition: 0.3s ease;
+}
+
+input::placeholder {
+  color: #aaa;
+}
+
+input:focus {
+  outline: none;
+  border-color: #ffd700;
+  background-color: #0e0e0e;
+  box-shadow: 0 0 8px rgba(255, 215, 0, 0.4);
+}
+
+/* Tombol */
+button {
+  padding: 12px;
+  background: linear-gradient(to right, #fdf6e3, #ffe08a);
+  border: none;
+  border-radius: 10px;
+  color: #000;
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.3s ease;
+}
+
+button:hover {
+  background: gold;
+  transform: translateY(-2px);
+}
+
+/* Footer */
+footer {
+  margin-top: 25px;
+  color: gold;
+  font-size: 12px;
+}
