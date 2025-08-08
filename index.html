@@ -11,18 +11,26 @@
     <div class="login-card">
       <div class="gold-frame">
         <img src="assets/img/Logo.png" alt="Orka Logo" class="logo">
-        <form action="login.php" method="POST">
+
+        <!-- Step 1: Input Username -->
+        <div id="form-username">
           <label for="username">Username</label>
-          <input type="text" id="username" name="username" placeholder="Masukkan username" required>
+          <input type="text" id="username" placeholder="Masukkan username" required>
+          <button onclick="cekUsername()">Lanjut</button>
+        </div>
 
-          <label for="password">Password</label>
-          <input type="password" id="password" name="password" placeholder="Masukkan password" required>
+        <!-- Step 2: Input OTP -->
+        <div id="form-otp" style="display:none;">
+          <label for="otp">Kode OTP</label>
+          <input type="text" id="otp" placeholder="Masukkan OTP" required>
+          <button onclick="verifikasiOTP()">Verifikasi</button>
+        </div>
 
-          <button type="submit">Login</button>
-        </form>
         <footer>© 2025 Orka Perfumes</footer>
       </div>
     </div>
   </div>
+
+  <script src="assets/js/login.js"></script>
 </body>
 </html>
